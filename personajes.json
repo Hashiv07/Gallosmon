@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nombre": "Gry",
+        "tipo": "fuego",
+        "base": {
+            "vida": 100,
+            "ataque": 95,
+            "defensa": 80
+        }
+    },
+    {
+        "id": 2,
+        "nombre": "Mina",
+        "tipo": "agua",
+        "base": {
+            "vida": 90,
+            "ataque": 60,
+            "defensa": 60
+        }
+    },
+    {
+        "id": 3,
+        "nombre": "Hina",
+        "tipo": "planta",
+        "base": {
+            "vida": 100,
+            "ataque": 80,
+            "defensa": 55
+        }
+    },
+    {
+        "id": 4,
+        "nombre": "Sub",
+        "tipo": "fantasma",
+        "base": {
+            "vida": 100,
+            "ataque": 55,
+            "defensa": 80
+        }
+    },
+    {
+        "id": 5,
+        "nombre": "Hakuna",
+        "tipo": "oscuridad",
+        "base": {
+            "vida": 90,
+            "ataque": 120,
+            "defensa": 70
+        }
+    },
+    {
+        "id": 6,
+        "nombre": "Hashi",
+        "tipo": "luz",
+        "base": {
+            "vida": 120,
+            "ataque": 70,
+            "defensa": 90
+        }
+    }
+]

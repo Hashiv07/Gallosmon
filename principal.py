@@ -27,7 +27,7 @@ print("4- ", atributos_gallosmon4[0])
 print("5- ", atributos_gallosmon5[0])
 print("6- ", atributos_gallosmon6[0])
 
-eleccion = input("\nelija un número: ")
+eleccion = input("\nElija un número: ")
 
 if eleccion == "1":
     gallosmon_elegido = atributos_gallosmon1

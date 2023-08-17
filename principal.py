@@ -32,23 +32,30 @@ print("6- ", atributos_gallosmon6[0])
 
 eleccion = input("\nElija un número: ")
 
-if eleccion == "1":
-    gallosmon_elegido = atributos_gallosmon1
-elif eleccion == "2":
-    gallosmon_elegido = atributos_gallosmon2
-elif eleccion == "3":
-    gallosmon_elegido = atributos_gallosmon3
-elif eleccion == "4":
-    gallosmon_elegido = atributos_gallosmon4
-elif eleccion == "5":
-    gallosmon_elegido = atributos_gallosmon5
-elif eleccion == "6":
-    gallosmon_elegido = atributos_gallosmon6
-else:
-    print("Opción inválida. Se usará el Gallosmon por defecto.")
-    gallosmon_elegido = atributos_gallosmon1
+try:
+        eleccion = int(eleccion)
+        if eleccion == "1":
+            gallosmon_elegido = atributos_gallosmon1
+        elif eleccion == "2":
+            gallosmon_elegido = atributos_gallosmon2
+        elif eleccion == "3":
+            gallosmon_elegido = atributos_gallosmon3
+        elif eleccion == "4":
+            gallosmon_elegido = atributos_gallosmon4
+        elif eleccion == "5":
+            gallosmon_elegido = atributos_gallosmon5
+        elif eleccion == "6":
+            gallosmon_elegido = atributos_gallosmon6
+        else:
+            print("Opción inválida. Se usará el Gallosmon por defecto.")
+            gallosmon_elegido = atributos_gallosmon1
 
-    time.sleep(3)
+        time.sleep(3)
+    
+except ValueError:
+        print("Opción inválida. Se usará el Gallosmon por defecto.")
+        gallosmon_elegido = atributos_gallosmon1
+        time.sleep(3)
 
 
 print("\n-------BATALLA GALLOSMON--------")
@@ -89,6 +96,5 @@ else:
     print(f"\nGANO {gallosmon_elegido[0]} !!!")
 
 time.sleep(2)
-
 
 print("El oponente te pagó $500")

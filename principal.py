@@ -1,7 +1,7 @@
-from pelea_gallosmon import GallosmonClass
+from pelea_gallosmon import GallosmonClase
 import time
 
-gallosmon = GallosmonClass()
+gallosmon = GallosmonClase()
 id_gallosmon1 = 1
 id_gallosmon2 = 2
 id_gallosmon3 = 3

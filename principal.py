@@ -1,4 +1,5 @@
 from pelea_gallosmon import obtener_atributos_gallosmon, pelea
+import time
 
 id_gallosmon1 = 1
 id_gallosmon2 = 2
@@ -17,6 +18,7 @@ atributos_gallosmon6 = obtener_atributos_gallosmon(id_gallosmon6)
 resultado_pelea = pelea(atributos_gallosmon1, atributos_gallosmon2)
 
 print("\n¡Bienvenido al Mundo Gallosmon!")
+time.sleep(3)
 
 print("\n¿Cuál Gallosmon eliges?")
 
@@ -45,7 +47,7 @@ else:
     print("Opción inválida. Se usará el Gallosmon por defecto.")
     gallosmon_elegido = atributos_gallosmon1
 
-#resultado_pelea = pelea(gallosmon_elegido, atributos_gallosmon2)
+time.sleep(3)
 
 
 print("\n-------BATALLA GALLOSMON--------")
@@ -61,18 +63,32 @@ print("TIPO/", atributos_gallosmon2[1])
 print("ATAQUE/", atributos_gallosmon2[2])
 print("DEFENSA/", atributos_gallosmon2[3])
 
+time.sleep(3)
 
 print("\nHA INICIADO LA BATALLA")
-print(f"\n{gallosmon_elegido[0]} se enfreta a {atributos_gallosmon2[0]}")
+print(f"\n{gallosmon_elegido[0]} se enfreta a {atributos_gallosmon2[0]} ...")
+time.sleep(5)
 
+print(f"\n{gallosmon_elegido[0]} ataca a {atributos_gallosmon2[0]} ...")
+time.sleep(5)
+
+print(f"\nEl ataque es muy efectivo !!!...")
+time.sleep(5)
+
+print(f"\n{atributos_gallosmon2[0]} ataca a {gallosmon_elegido[0]} ...")
+time.sleep(5)
+
+print(f"\nEl ataque no es muy efectivo !!!...")
+
+time.sleep(5)
 
 if gallosmon_elegido[4] <= 0:
-    print("\n GANO ", atributos_gallosmon2[0])
+    print(f"\nGANO {atributos_gallosmon2[0]} !!!")
 else:  
-    print("\n GANO ", gallosmon_elegido[0])
+    print(f"\nGANO {gallosmon_elegido[0]} !!!")
 
 
+time.sleep(2)
 
-"""print("\nResultado de la pelea:")
-print("Gallosmon 1:", resultado_pelea[0])
-print("Gallosmon 2:", resultado_pelea[1])"""
+
+print("El oponente te pagó $500")

@@ -1,6 +1,6 @@
 from funciones_lectura_escritura import leer_archivo_json
 
-class GallosmonClass:
+class GallosmonClase:
     def __init__(self):
         self.GALLOSMON = leer_archivo_json("Gallomon\personajes.json")
 

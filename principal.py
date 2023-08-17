@@ -1,21 +1,21 @@
-from pelea_gallosmon import obtener_atributos_gallosmon, pelea
+from pelea_gallosmon import GallosmonClass
 import time
 
+gallosmon = GallosmonClass()
 id_gallosmon1 = 1
 id_gallosmon2 = 2
 id_gallosmon3 = 3
 id_gallosmon4 = 4
 id_gallosmon5 = 5
 id_gallosmon6 = 6
-atributos_gallosmon1 = obtener_atributos_gallosmon(id_gallosmon1)
-atributos_gallosmon2 = obtener_atributos_gallosmon(id_gallosmon2)
-atributos_gallosmon3 = obtener_atributos_gallosmon(id_gallosmon3)
-atributos_gallosmon4 = obtener_atributos_gallosmon(id_gallosmon4)
-atributos_gallosmon5 = obtener_atributos_gallosmon(id_gallosmon5)
-atributos_gallosmon6 = obtener_atributos_gallosmon(id_gallosmon6)
+atributos_gallosmon1 = gallosmon.obtener_atributos_gallosmon(id_gallosmon1)
+atributos_gallosmon2 = gallosmon.obtener_atributos_gallosmon(id_gallosmon2)
+atributos_gallosmon3 = gallosmon.obtener_atributos_gallosmon(id_gallosmon3)
+atributos_gallosmon4 = gallosmon.obtener_atributos_gallosmon(id_gallosmon4)
+atributos_gallosmon5 = gallosmon.obtener_atributos_gallosmon(id_gallosmon5)
+atributos_gallosmon6 = gallosmon.obtener_atributos_gallosmon(id_gallosmon6)
 
-
-resultado_pelea = pelea(atributos_gallosmon1, atributos_gallosmon2)
+resultado_pelea = gallosmon.pelea(atributos_gallosmon1, atributos_gallosmon2)
 
 print("\n¡Bienvenido al Mundo Gallosmon!")
 time.sleep(3)
@@ -28,6 +28,7 @@ print("3- ", atributos_gallosmon3[0])
 print("4- ", atributos_gallosmon4[0])
 print("5- ", atributos_gallosmon5[0])
 print("6- ", atributos_gallosmon6[0])
+
 
 eleccion = input("\nElija un número: ")
 
@@ -47,7 +48,7 @@ else:
     print("Opción inválida. Se usará el Gallosmon por defecto.")
     gallosmon_elegido = atributos_gallosmon1
 
-time.sleep(3)
+    time.sleep(3)
 
 
 print("\n-------BATALLA GALLOSMON--------")
@@ -86,7 +87,6 @@ if gallosmon_elegido[4] <= 0:
     print(f"\nGANO {atributos_gallosmon2[0]} !!!")
 else:  
     print(f"\nGANO {gallosmon_elegido[0]} !!!")
-
 
 time.sleep(2)
 

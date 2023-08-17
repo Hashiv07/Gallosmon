@@ -23,4 +23,4 @@ def pelea(gallosmon1, gallosmon2):
     return [nombre1, tipo1, ataque1, defensa1, vida1], [nombre2, tipo2, ataque2, defensa2, vida2]
 
 
-#print(obtener_atributos_gallosmon(1))
+

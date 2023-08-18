@@ -4,7 +4,7 @@ class GallosmonClase:
     def __init__(self):
         self.GALLOSMON = leer_archivo_json("Gallomon\personajes.json")
 
-    def obtener_atributos_gallosmon(self, gallo_id):
+    def o_a_g(self, gallo_id):  #Obtener_atributos_gallosmon
         for gallomon in self.GALLOSMON:
             if gallomon["id"] == gallo_id:
                 atributos = gallomon

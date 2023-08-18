@@ -33,24 +33,24 @@ print("6- ", atributos_g6[0])
 eleccion = input("\nElija un número: ")
 
 try:
-        eleccion = int(eleccion)
-        if eleccion == "1":
-            gallosmon_e = atributos_g1    #gallosmon_elegido
-        elif eleccion == "2":
-            gallosmon_e = atributos_g2
-        elif eleccion == "3":
-            gallosmon_e = atributos_g3
-        elif eleccion == "4":
-            gallosmon_e = atributos_g4
-        elif eleccion == "5":
-            gallosmon_e = atributos_g5
-        elif eleccion == "6":
-            gallosmon_e = atributos_g6
-        else:
-            print("Opción inválida. Se usará el Gallosmon por defecto.")
-            gallosmon_e = atributos_g1
+    eleccion = int(eleccion)
+    if eleccion == 1:
+        gallosmon_e = atributos_g1    #gallosmon_elegido
+    elif eleccion == 2:
+        gallosmon_e = atributos_g2
+    elif eleccion == 3:
+        gallosmon_e = atributos_g3
+    elif eleccion == 4:
+        gallosmon_e = atributos_g4
+    elif eleccion == 5:
+        gallosmon_e = atributos_g5
+    elif eleccion == 6:
+        gallosmon_e = atributos_g6
+    else:
+        print("Opción inválida. Se usará el Gallosmon por defecto.")
+        gallosmon_e = atributos_g1
 
-        time.sleep(3)
+    time.sleep(3)
     
 except ValueError:
         print("Opción inválida. Se usará el Gallosmon por defecto.")
